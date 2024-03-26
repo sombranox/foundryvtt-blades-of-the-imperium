@@ -7,6 +7,3 @@
 {"_id":"11367cd5dde54afa","name":"Highborn","permission":{"default":0},"type":"heritage","system":{"description":"Nobles are privileged individuals, raised in wealth and steeped in tradition and etiquette. They are ideally suited for those who prefer charm and guile over brute force. Nobles make superb spies, diplomats and assassins."},"sort":100000,"flags":{}}
 {"_id":"d3df3ec48abe4f01","name":"Mind Cleansed","permission":{"default":0},"type":"heritage","system":{"description":"Those whose minds have been emptied of identity and their memories wiped or sealed off. These rare individuals have been “re-made” by their Inquisitorial masters to serve the Holy Ordos."},"sort":100000,"flags":{}}
 {"_id":"d3df3ec48abe4f01","name":"Schola Progenium","permission":{"default":0},"type":"heritage","system":{"description":"Progena are orphans of Imperial servants trained in mind, body and spirit from birth. They make for superior warriors and knowledgeable leaders, if lacking in experience of life’s more sordid side."},"sort":100000,"flags":{}}
-
-
-
