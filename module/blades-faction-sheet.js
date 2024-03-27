@@ -6,11 +6,13 @@ import { BladesSheet } from "./blades-sheet.js";
 export class BladesFactionSheet extends BladesSheet {
   /** @override */
   static get defaultOptions() {
-    const sheet = "systems/blades-in-the-dark/templates/faction-sheet.html";
+    const sheet =
+      "systems/blades-of-the-inquisition/templates/faction-sheet.html";
     loadTemplates([sheet]);
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["blades-in-the-dark", "sheet", "actor", "faction"],
-      template: "systems/blades-in-the-dark/templates/faction-sheet.html",
+      template:
+        "systems/blades-of-the-inquisition/templates/faction-sheet.html",
       width: 900,
       height: "auto",
       tabs: [{ navSelector: ".tabs", contentSelector: ".tab-content" }],

@@ -96,7 +96,7 @@ async function showChatRollMessage(
     }
 
     result = await renderTemplate(
-      "systems/blades-in-the-dark/templates/chat/action-roll.html",
+      "systems/blades-of-the-inquisition/templates/chat/action-roll.html",
       {
         rolls: rolls,
         roll_status: roll_status,
@@ -114,7 +114,7 @@ async function showChatRollMessage(
     let stress = getBladesRollStress(rolls, zeromode);
 
     result = await renderTemplate(
-      "systems/blades-in-the-dark/templates/chat/resistance-roll.html",
+      "systems/blades-of-the-inquisition/templates/chat/resistance-roll.html",
       {
         rolls: rolls,
         roll_status: roll_status,
@@ -136,7 +136,7 @@ async function showChatRollMessage(
     }
 
     result = await renderTemplate(
-      "systems/blades-in-the-dark/templates/chat/vice-roll.html",
+      "systems/blades-of-the-inquisition/templates/chat/vice-roll.html",
       {
         rolls: rolls,
         roll_status: roll_status,
@@ -149,7 +149,7 @@ async function showChatRollMessage(
   // Check for Gather Information roll
   else if (attribute_name == "BITD.GatherInformation") {
     result = await renderTemplate(
-      "systems/blades-in-the-dark/templates/chat/gather-info-roll.html",
+      "systems/blades-of-the-inquisition/templates/chat/gather-info-roll.html",
       {
         rolls: rolls,
         roll_status: roll_status,
@@ -161,7 +161,7 @@ async function showChatRollMessage(
   // Check for Engagement roll
   else if (attribute_name == "BITD.Engagement") {
     result = await renderTemplate(
-      "systems/blades-in-the-dark/templates/chat/engagement-roll.html",
+      "systems/blades-of-the-inquisition/templates/chat/engagement-roll.html",
       {
         rolls: rolls,
         roll_status: roll_status,
@@ -191,7 +191,7 @@ async function showChatRollMessage(
     }
 
     result = await renderTemplate(
-      "systems/blades-in-the-dark/templates/chat/asset-roll.html",
+      "systems/blades-of-the-inquisition/templates/chat/asset-roll.html",
       {
         rolls: rolls,
         roll_status: roll_status,
@@ -204,7 +204,7 @@ async function showChatRollMessage(
   // Fortune roll if not specified
   else {
     result = await renderTemplate(
-      "systems/blades-in-the-dark/templates/chat/fortune-roll.html",
+      "systems/blades-of-the-inquisition/templates/chat/fortune-roll.html",
       {
         rolls: rolls,
         roll_status: roll_status,

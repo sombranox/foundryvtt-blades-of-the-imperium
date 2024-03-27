@@ -7,18 +7,18 @@ export const preloadHandlebarsTemplates = async function () {
   // Define template paths to load
   const templatePaths = [
     // Base templates
-    "systems/blades-in-the-dark/templates/actor-sheet.html",
-    "systems/blades-in-the-dark/templates/crew-sheet.html",
-    "systems/blades-in-the-dark/templates/faction-sheet.html",
-    "systems/blades-in-the-dark/templates/npc-sheet.html",
+    "systems/blades-of-the-inquisition/templates/actor-sheet.html",
+    "systems/blades-of-the-inquisition/templates/crew-sheet.html",
+    "systems/blades-of-the-inquisition/templates/faction-sheet.html",
+    "systems/blades-of-the-inquisition/templates/npc-sheet.html",
 
     // Actor Sheet Partials
-    "systems/blades-in-the-dark/templates/parts/coins.html",
-    "systems/blades-in-the-dark/templates/parts/attributes.html",
-    "systems/blades-in-the-dark/templates/parts/turf-list.html",
-    "systems/blades-in-the-dark/templates/parts/cohort-block.html",
-    "systems/blades-in-the-dark/templates/parts/factions.html",
-    "systems/blades-in-the-dark/templates/parts/active-effects.html",
+    "systems/blades-of-the-inquisition/templates/parts/coins.html",
+    "systems/blades-of-the-inquisition/templates/parts/attributes.html",
+    "systems/blades-of-the-inquisition/templates/parts/turf-list.html",
+    "systems/blades-of-the-inquisition/templates/parts/cohort-block.html",
+    "systems/blades-of-the-inquisition/templates/parts/factions.html",
+    "systems/blades-of-the-inquisition/templates/parts/active-effects.html",
   ];
 
   // Load the template parts

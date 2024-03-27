@@ -8,11 +8,12 @@ import { BladesActiveEffect } from "./blades-active-effect.js";
 export class BladesActorSheet extends BladesSheet {
   /** @override */
   static get defaultOptions() {
-    const sheet = "systems/blades-in-the-dark/templates/actor-sheet.html";
+    const sheet =
+      "systems/blades-of-the-inquisition/templates/actor-sheet.html";
     loadTemplates([sheet]);
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["blades-in-the-dark", "sheet", "actor", "pc"],
-      template: "systems/blades-in-the-dark/templates/actor-sheet.html",
+      template: "systems/blades-of-the-inquisition/templates/actor-sheet.html",
       width: 700,
       height: 970,
       tabs: [
