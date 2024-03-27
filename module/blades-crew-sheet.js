@@ -6,6 +6,8 @@ import { BladesSheet } from "./blades-sheet.js";
 export class BladesCrewSheet extends BladesSheet {
   /** @override */
   static get defaultOptions() {
+    const sheet = "systems/blades-in-the-dark/templates/crew-sheet.html";
+    loadTemplates([sheet]);
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["blades-in-the-dark", "sheet", "actor", "crew"],
       template: "systems/blades-in-the-dark/templates/crew-sheet.html",

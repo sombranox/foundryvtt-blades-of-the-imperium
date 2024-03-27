@@ -1,19 +1,19 @@
-
 import { BladesSheet } from "./blades-sheet.js";
 
 /**
  * @extends {BladesSheet}
  */
 export class BladesNPCSheet extends BladesSheet {
-
   /** @override */
-	static get defaultOptions() {
-	  return foundry.utils.mergeObject(super.defaultOptions, {
-  	  classes: ["blades-in-the-dark", "sheet", "actor"],
-  	  template: "systems/blades-in-the-dark/templates/npc-sheet.html",
+  static get defaultOptions() {
+    const sheet = "systems/blades-in-the-dark/templates/npc-sheet.html";
+    loadTemplates([sheet]);
+    return foundry.utils.mergeObject(super.defaultOptions, {
+      classes: ["blades-in-the-dark", "sheet", "actor"],
+      template: "systems/blades-in-the-dark/templates/npc-sheet.html",
       width: 900,
-      height: 'auto',
-      tabs: [{navSelector: ".tabs", contentSelector: ".tab-content"}]
+      height: "auto",
+      tabs: [{ navSelector: ".tabs", contentSelector: ".tab-content" }],
     });
   }
 
@@ -21,22 +21,25 @@ export class BladesNPCSheet extends BladesSheet {
 
   /** @override */
   async getData(options) {
-    const superData = super.getData( options );
+    const superData = super.getData(options);
     const sheetData = superData.data;
 
     sheetData.isGM = game.user.isGM;
     sheetData.owner = superData.owner;
     sheetData.editable = superData.editable;
 
-    sheetData.system.description = await TextEditor.enrichHTML(sheetData.system.description, {secrets: sheetData.owner, async: true});
+    sheetData.system.description = await TextEditor.enrichHTML(
+      sheetData.system.description,
+      { secrets: sheetData.owner, async: true }
+    );
 
     return sheetData;
   }
 
   /* -------------------------------------------- */
 
-    /** @override */
-	activateListeners(html) {
+  /** @override */
+  activateListeners(html) {
     super.activateListeners(html);
 
     // Everything below here is only needed if the sheet is editable
@@ -55,6 +58,5 @@ export class BladesNPCSheet extends BladesSheet {
     //   this.actor.deleteEmbeddedDocuments("Item", [element.data("itemId")]);
     //   element.slideUp(200, () => this.render(false));
     // });
-
-	}
+  }
 }

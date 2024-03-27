@@ -2,7 +2,7 @@
   "id": "blades-of-the-inquisition",
   "title": "Blades of the Inquisition (Blades in the Dark hack)",
   "description": "Blades of the Inquisition (Blades in the Dark hack) game system.",
-  "version": "4.8.2",
+  "version": "4.8.3",
   "compatibility": {
     "minimum": 10,
     "verified": "11.315"
@@ -11,7 +11,7 @@
   "minimumCoreVersion": "10",
   "url": "https://github.com/sombranox/foundryvtt-blades-of-the-inquisition/",
   "manifest": "https://raw.githubusercontent.com/sombranox/foundryvtt-blades-of-the-inquisition/master/system.json",
-  "download": "https://github.com/sombranox/foundryvtt-blades-of-the-inquisition/releases/download/4.8.2/blades-of-the-inquisition-4.8.2.zip",
+  "download": "https://github.com/sombranox/foundryvtt-blades-of-the-inquisition/releases/download/4.8.3/blades-of-the-inquisition-4.8.3.zip",
   "authors": [
     { "name": "sombranox" },
     { "name": "RoosterEma" },
